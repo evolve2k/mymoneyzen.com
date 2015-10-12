@@ -1,4 +1,4 @@
-thesitename.com
+thesite ro.com
 ===============
 
 This sentence summaries what the website is for.
@@ -9,15 +9,22 @@ Please replace all this text in your new project.
 Installation
 ------------
 
-1.
-2.
+1. Install SASS
+
+    $ gem install sass
 
 Instructions for Designers
 --------------------------
 
+CSS files are auto generated from SCSS files. Edit SCSS files as if they are CSS files.
+Run SASS precompiler before you start changing scss files.
+
+$ sass -w assets/stylesheets/scss/main.scss:../css/main.css
+
 
 Instructions for Developers
 ---------------------------
+
 
 
 
