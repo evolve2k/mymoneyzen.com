@@ -1,0 +1,12 @@
+@import "../partials/typography";
+
+@mixin font-face($font-family, $file-path, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+
+    src: url('https://fonts.googleapis.com/css?family=Montserrat);
+
+    font-weight: $weight;
+    font-style:  $style;
+  }
+}
