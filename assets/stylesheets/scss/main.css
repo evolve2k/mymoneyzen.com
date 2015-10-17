@@ -1,0 +1,187 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/******************************
+* Grid context
+*/
+/******************************
+ * Columns
+*/
+/* Horizontal side-by-side with elements verticaly and horizontaly centered */
+/* Vertical stacked column with elements verticaly and horizontaly centered */
+body {
+  font-family: 'Montserrat';
+  font-size: 100%; }
+
+a, a:visited {
+  color: white;
+  text-decoration: none; }
+
+h1, h2, h3, h4 {
+  color: #69bf80; }
+
+h1 {
+  font-size: 3.157rem; }
+
+h2 {
+  font-size: 2.618rem; }
+
+h3 {
+  font-size: 2.369rem;
+  margin-bottom: .5rem; }
+
+h4 {
+  font-size: 1.777rem;
+  color: #191e23;
+  font-weight: 100;
+  font-style: italic; }
+
+img {
+  width: 100%; }
+
+img > h2 {
+  display: inline-block;
+  vertical-align: middle;
+  /* vertical alignment of the inline element */
+  color: white;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  top: 55%;
+  left: 50%;
+  width: 100%; }
+
+p {
+  line-height: 1.5rem; }
+
+.header_logo {
+  background-image: url("../../images/logo/MyMoneyZen_Logo1.png");
+  height: 60px;
+  width: 328px;
+  position: absolute;
+  top: 10;
+  left: 10; }
+
+header {
+  height: 100px; }
+
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  /* default */
+  align-items: right;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: flex-start;
+  list-style: none;
+  margin: 10px; }
+
+section {
+  max-width: 46rem;
+  padding: 0 2rem; }
+
+main {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center; }
+  main::after {
+    content: "";
+    display: table;
+    clear: both; }
+  main > * {
+    padding: .25rem;
+    float: left; }
+
+.grid > div {
+  width: 25%; }
+
+main > header {
+  width: 100%; }
+
+main > article {
+  width: 100%;
+  /* make the article a grid */
+  padding: 0;
+  /* Colour for illustration purpose - remove from final*/
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center; }
+  main > article::after {
+    content: "";
+    display: table;
+    clear: both; }
+  main > article > * {
+    padding: .25rem;
+    float: left; }
+
+main > article > div {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center; }
+
+main > aside {
+  width: 33.333333333%; }
+
+main > footer {
+  width: 100%; }
+
+.container {
+  margin: 0 auto; }
+
+.overlay {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center; }
+
+footer {
+  background-color: #282C34; }
+
+footer p {
+  color: white; }
+
+ul li {
+  list-style-type: none;
+  padding: 1rem 0; }
+
+#hero {
+  background-image: url("../../images/sea-sunny-person-beach.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  padding: 0; }
+
+#hero h2, #hero h4 {
+  color: #f6f3f0; }
+
+#how-it-works {
+  background-image: url("../../images/person-woman-coffee-cup.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  padding: 0; }
+
+#live-the-life {
+  background-image: url("../../images/nature-person-feet-legs.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  padding: 0; }
+
+#live-the-life section h2 {
+  color: white; }
+
+@media screen and (max-width: 480px) {
+  width: 100%; }
