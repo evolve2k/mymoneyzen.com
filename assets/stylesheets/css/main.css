@@ -15,8 +15,12 @@ body {
   font-family: 'Montserrat';
   font-size: 100%; }
 
-article {
-  margin: 100px; }
+a, a:visited {
+  color: white;
+  text-decoration: none; }
+
+h1, h2, h3, h4 {
+  color: #69BF80; }
 
 h1 {
   font-size: 3.157rem; }
@@ -29,7 +33,10 @@ h3 {
   margin-bottom: .5rem; }
 
 h4 {
-  font-size: 1.777rem; }
+  font-size: 1.777rem;
+  color: #191E23;
+  font-weight: 100;
+  font-style: italic; }
 
 img {
   width: 100%; }
@@ -44,6 +51,9 @@ img > h2 {
   top: 55%;
   left: 50%;
   width: 100%; }
+
+p {
+  line-height: 1.5rem; }
 
 .header_logo {
   background-image: url("../../images/logo/MyMoneyZen_Logo1.png");
@@ -68,16 +78,12 @@ header > nav > ul {
   list-style: none;
   margin: 10px; }
 
-article section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; }
+section {
+  max-width: 46rem;
+  padding: 0 2rem; }
 
 main {
-  margin: 0 4.236rem 0 1.618rem;
   padding: 0;
-  max-width: 46rem;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -99,7 +105,6 @@ main > header {
 main > article {
   width: 100%;
   /* make the article a grid */
-  margin: 0 4.236rem 0 1.618rem;
   padding: 0;
   /* Colour for illustration purpose - remove from final*/
   display: flex;
@@ -121,27 +126,64 @@ main > article > div {
   justify-content: center; }
 
 main > aside {
-  width: 33.333333333%;
-  /* Colour for illustration purpose - remove from final*/ }
+  width: 33.333333333%; }
 
 main > footer {
-  width: 100%;
-  /* Colour for illustration purpose - remove from final*/ }
+  width: 100%; }
+
+.container {
+  margin: 0 auto; }
+
+.overlay {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center; }
+
+footer {
+  background-color: #282C34; }
+
+footer p {
+  color: white; }
+
+ul li {
+  list-style-type: none;
+  padding: 1rem 0; }
 
 #hero {
   background-image: url("../../images/sea-sunny-person-beach.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   width: 100%;
-  height: 900px; }
+  height: 600px;
+  padding: 0; }
+
+#hero h2, #hero h4 {
+  color: #F6F3F0; }
 
 #how-it-works {
-  background-image: url("../../images/people-woman-girl-writing.jpg");
-  width: 100%;
-  height: 900px; }
-
-#testimonial {
   background-image: url("../../images/person-woman-coffee-cup.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   width: 100%;
-  height: 900px; }
+  height: 600px;
+  padding: 0; }
+
+#live-the-life {
+  background-image: url("../../images/nature-person-feet-legs.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  padding: 0; }
+
+#live-the-life section h2 {
+  color: white; }
 
 @media screen and (max-width: 480px) {
-  width: 66.6666666%; }
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
