@@ -199,6 +199,9 @@ ul li {
   list-style-type: none;
   padding: 1rem 0; }
 
+ol li {
+  padding: .25rem 0; }
+
 #hero {
   background-image: url("../../images/sea-sunny-person-beach.jpg");
   background-repeat: no-repeat;
