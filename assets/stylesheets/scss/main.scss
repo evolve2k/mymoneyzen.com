@@ -6,9 +6,17 @@ body {
 }
 
 
+#hero > section > a:visted{
+	color: $white;
+}
 a, a:visited {
-	color: white;
+	color: $primary;
 	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: $tertiary;
 }
 
 h1,h2,h3,h4{
@@ -136,7 +144,7 @@ main > footer {
 }
 
 .container {
-	margin: 0 auto 5rem; //auto 4.236rem auto 1.618rem;
+	margin: 0 auto 3rem; //auto 4.236rem auto 1.618rem;
 	// background-color: blue;
 }
 
@@ -149,7 +157,7 @@ main > footer {
 
 footer {
 	background-color: #282C34;
-	padding-top: 8rem;
+	padding-top: 4rem;
 }
 
 footer p {
@@ -159,6 +167,10 @@ footer p {
 footer i {
 	margin-right: 1.5rem;
 	color: white;
+}
+
+ul{
+	padding-left: 0;
 }
 
 ul li {
@@ -202,6 +214,14 @@ ul li {
 
 #live-the-life section h2 {
 	color: white;
+}
+
+.testimonials{
+	padding-bottom: 0rem;
+}
+
+.get-started {
+	padding-top: 0rem;
 }
 
 @media screen and (max-width: 480px) {
