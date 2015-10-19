@@ -7,6 +7,36 @@
 }
 
 .call-to-action{
-  justify-content: center;
+  color: #F6F3F0;
+}
+
+.call-to-action:visited{
+  color: #F6F3F0;
+}
+
+.call-to-action:hover{
+  color: #F57764;
+}
+
+.call-to-action > .dark {
+  color: black;
+}
+
+.dark {
+  color: #814AA1;
+}
+
+.dark:visited {
+  color: #814AA1;
+}
+
+.dark:hover {
+  color: #F57764;
+}
+
+.center{
   display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: center;
 }

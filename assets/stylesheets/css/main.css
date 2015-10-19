@@ -6,8 +6,31 @@
   white-space: nowrap; }
 
 .call-to-action {
-  justify-content: center;
-  display: flex; }
+  color: #F6F3F0; }
+
+.call-to-action:visited {
+  color: #F6F3F0; }
+
+.call-to-action:hover {
+  color: #F57764; }
+
+.call-to-action > .dark {
+  color: black; }
+
+.dark {
+  color: #814AA1; }
+
+.dark:visited {
+  color: #814AA1; }
+
+.dark:hover {
+  color: #F57764; }
+
+.center {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: center; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -27,18 +50,18 @@ body {
   font-size: 100%; }
 
 #hero > section > a:visted {
-  color: #f6f3f0; }
+  color: #F6F3F0; }
 
 a, a:visited {
-  color: #7fc1b8;
+  color: #7FC1B8;
   text-decoration: none; }
 
 a:hover {
   text-decoration: underline;
-  color: #ef734d; }
+  color: #EF734D; }
 
 h1, h2, h3, h4 {
-  color: #69bf80; }
+  color: #69BF80; }
 
 h1 {
   font-size: 3.157rem; }
@@ -52,7 +75,7 @@ h3 {
 
 h4 {
   font-size: 1.777rem;
-  color: #191e23;
+  color: #191E23;
   font-weight: 100;
   font-style: italic; }
 
@@ -191,7 +214,7 @@ ul li {
   padding: 0; }
 
 #hero h2, #hero h4 {
-  color: #f6f3f0; }
+  color: #F6F3F0; }
 
 #how-it-works {
   background-image: url("../../images/person-woman-coffee-cup.jpg");
@@ -222,3 +245,5 @@ ul li {
 
 @media screen and (max-width: 480px) {
   width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
