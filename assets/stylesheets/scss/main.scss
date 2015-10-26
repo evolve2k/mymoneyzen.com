@@ -90,7 +90,35 @@ nav > ul li + li:before {
 section {
 	max-width: 46rem;
 	padding: 0 2rem;
-	max-resolution: 2rem;
+}
+
+section ol {
+	list-style: none;
+}
+
+section ol li {
+	border: solid 1px;
+	border-color: black;
+	border-radius: 1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+section li i {
+	padding-top: 1rem;
+}
+
+section li > h2 {
+	text-align: center;
+}
+
+section li > .fa {
+	font-size: 4rem;
+	text-align: center;
+}
+
+section li p {
+	margin: 0 1rem 2rem 1rem;
 }
 
 main {
