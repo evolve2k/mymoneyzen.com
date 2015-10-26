@@ -115,6 +115,8 @@ main {
 // make header 100% width
 main > header {
 	@include col-1-1;
+	height: 100px;
+	max-width: 1200px;
 }
 
 main > article {
@@ -197,7 +199,7 @@ ol li{
 	color: $white;
 }
 
-#how-it-works {
+#why {
 	background-image: url("../../images/person-woman-coffee-cup.jpg");
 	background-repeat : no-repeat;
 	background-position : 50% 50%;
@@ -223,6 +225,10 @@ ol li{
 
 .testimonials{
 	padding-bottom: 0rem;
+}
+
+.testimonials {
+	border: none;
 }
 
 .get-started {

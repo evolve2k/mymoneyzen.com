@@ -12,7 +12,10 @@
   color: #F6F3F0; }
 
 .call-to-action:hover {
-  color: #F57764; }
+  color: #F6F3F0;
+  background-color: #F58150;
+  border: #F58150;
+  text-decoration: none; }
 
 .call-to-action > .dark {
   color: black; }
@@ -24,7 +27,8 @@
   color: #814AA1; }
 
 .dark:hover {
-  color: #F57764; }
+  color: #F6F3F0;
+  background-color: #F58150; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -44,18 +48,18 @@ body {
   font-size: 100%; }
 
 #hero > section > a:visted {
-  color: #f6f3f0; }
+  color: #F6F3F0; }
 
 a, a:visited {
-  color: #7fc1b8;
+  color: #7FC1B8;
   text-decoration: none; }
 
 a:hover {
   text-decoration: underline;
-  color: #ef734d; }
+  color: #EF734D; }
 
 h1, h2, h3, h4 {
-  color: #69bf80; }
+  color: #69BF80; }
 
 h1 {
   font-size: 3.157rem; }
@@ -69,7 +73,7 @@ h3 {
 
 h4 {
   font-size: 1.777rem;
-  color: #191e23;
+  color: #191E23;
   font-weight: 100;
   font-style: italic; }
 
@@ -95,14 +99,10 @@ p {
   height: 60px;
   width: 328px;
   position: absolute;
-  top: 10;
-  left: 10; }
-
-header {
-  height: 100px; }
+  top: 1rem; }
 
 header > nav > ul {
-  color: #7fc1b8;
+  color: #7FC1B8;
   display: flex;
   flex-direction: row;
   /* default */
@@ -118,10 +118,49 @@ nav > ul li + li:before {
   content: "|";
   padding: 0 .5rem; }
 
+.hamburger {
+  position: relative;
+  display: inline-block;
+  width: 1.25rem;
+  height: 0.8rem;
+  margin-right: 0.3rem;
+  border-top: 0.2rem solid #000;
+  border-bottom: 0.2rem solid #000; }
+
+.hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: 0px;
+  width: 100%;
+  border-top: 0.2rem solid #000; }
+
 section {
   max-width: 46rem;
-  padding: 0 2rem;
-  max-resolution: 2rem; }
+  padding: 0 2rem; }
+
+section ol {
+  list-style: none; }
+
+section ol li {
+  border: solid 1px;
+  border-color: black;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 2rem; }
+
+section li i {
+  padding-top: 1rem; }
+
+section li > h2 {
+  text-align: center; }
+
+section li > .fa {
+  font-size: 4rem;
+  text-align: center; }
+
+section li p {
+  margin: 0 1rem 2rem 1rem; }
 
 main {
   padding: 0;
@@ -141,7 +180,9 @@ main {
   width: 25%; }
 
 main > header {
-  width: 100%; }
+  width: 100%;
+  height: 100px;
+  max-width: 1200px; }
 
 main > article {
   width: 100%;
@@ -212,9 +253,9 @@ ol li {
   padding: 0; }
 
 #hero h2, #hero h4 {
-  color: #f6f3f0; }
+  color: #F6F3F0; }
 
-#how-it-works {
+#why {
   background-image: url("../../images/person-woman-coffee-cup.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -238,6 +279,9 @@ ol li {
 .testimonials {
   padding-bottom: 0rem; }
 
+.testimonials {
+  border: none; }
+
 .get-started {
   padding-top: 0rem; }
 
@@ -246,3 +290,15 @@ ol li {
 
 @media screen and (max-width: 480px) {
   width: 100%; }
+@media screen and (min-width: 1099px) {
+  .why-features {
+    max-width: 1200px; }
+
+  .why-features li {
+    width: 100rem;
+    margin: 0 2rem; }
+
+  .why-features ol {
+    display: flex; } }
+
+/*# sourceMappingURL=main.css.map */
