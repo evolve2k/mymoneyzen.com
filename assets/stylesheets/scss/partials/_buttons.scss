@@ -15,7 +15,10 @@
 }
 
 .call-to-action:hover{
-  color: #F57764;
+  color: #F6F3F0;
+  background-color: #F58150;
+  border: #F58150;
+  text-decoration: none;
 }
 
 .call-to-action > .dark {
@@ -31,5 +34,6 @@
 }
 
 .dark:hover {
-  color: #F57764;
+  color: #F6F3F0;
+  background-color: #F58150;  
 }
