@@ -236,3 +236,17 @@ ol li{
 @media screen and (max-width: 480px) {
 	@include col-1-1;
 }
+
+@media screen and (min-width: 1099px) {
+	.why-features {
+		max-width: 1200px;
+	}
+	.why-features li {
+			width: 100rem;
+			margin: 0 2rem;
+	}
+	.why-features ol {
+			display: flex;
+	}
+
+}
