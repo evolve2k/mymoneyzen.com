@@ -19,7 +19,7 @@ Instructions for Designers
 CSS files are auto generated from SCSS files. Edit SCSS files as if they are CSS files.
 Run SASS precompiler before you start changing scss files.
 
-$ sass -w assets/stylesheets/scss/main.scss:../css/main.css
+$ sass -w assets/stylesheets/scss/main.scss:assets/stylesheets/css/main.css
 
 
 Instructions for Developers
