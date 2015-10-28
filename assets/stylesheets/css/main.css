@@ -51,7 +51,7 @@ body {
   color: #F6F3F0; }
 
 a, a:visited {
-  color: #7FC1B8;
+  color: #0EDFA0;
   text-decoration: none; }
 
 a:hover {
@@ -59,7 +59,7 @@ a:hover {
   color: #EF734D; }
 
 h1, h2, h3, h4 {
-  color: #69BF80; }
+  color: #0EDFA0; }
 
 h1 {
   font-size: 3.157rem; }
@@ -96,13 +96,14 @@ p {
 
 .header_logo {
   background-image: url("../../images/logo/MyMoneyZen_Logo1.png");
+  background-repeat: no-repeat;
   height: 60px;
   width: 328px;
   position: absolute;
-  top: 1rem; }
+  top: 1.5rem; }
 
 header > nav > ul {
-  color: #7FC1B8;
+  color: #0EDFA0;
   display: flex;
   flex-direction: row;
   /* default */
@@ -257,7 +258,7 @@ ol li {
   padding: 0; }
 
 #live-the-life section h2 {
-  color: white; }
+  color: #F6F3F0; }
 
 .testimonials {
   padding-bottom: 0rem; }

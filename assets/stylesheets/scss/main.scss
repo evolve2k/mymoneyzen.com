@@ -63,10 +63,11 @@ p {
 }
 .header_logo {
 	background-image: url("../../images/logo/MyMoneyZen_Logo1.png");
+	background-repeat: no-repeat;
 	height: 60px;
 	width: 328px;
 	position: absolute;
-	top: 1rem;
+	top: 1.5rem;
 }
 
 header > nav > ul {
@@ -242,7 +243,7 @@ ol li{
 }
 
 #live-the-life section h2 {
-	color: white;
+	color: $white;
 }
 
 .testimonials{
