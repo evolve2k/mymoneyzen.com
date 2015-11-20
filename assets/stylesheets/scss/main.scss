@@ -1,7 +1,7 @@
 @import "modules/all";
 
 body {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	font-size: 100%;
 }
 
@@ -220,6 +220,10 @@ ol li{
 
 #hero h2, #hero h4 {
 	color: $white;
+}
+
+#coffee{
+
 }
 
 #why {
