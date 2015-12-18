@@ -1,3 +1,4 @@
+
 .link-outline{
   text-decoration: none;
   border: 1px solid;
@@ -7,17 +8,22 @@
 }
 
 .call-to-action{
-  color: #F6F3F0;
+  font-size: 14pt;
+  color: white;
+  background-color: #0EDFA0;
+  border-color: #0EDFA0;
+  width: 18rem;
+  text-align: center;
 }
 
 .call-to-action:visited{
-  color: #F6F3F0;
+  color: white;
 }
 
 .call-to-action:hover{
-  color: #F6F3F0;
-  background-color: #F58150;
-  border: #F58150;
+  color: #0EDFA0;
+  background-color: white;
+  border-color: white;
   text-decoration: none;
 }
 
@@ -35,5 +41,5 @@
 
 .dark:hover {
   color: #F6F3F0;
-  background-color: #F58150;  
+  background-color: #F58150;
 }

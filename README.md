@@ -24,7 +24,9 @@ $ sass -w assets/stylesheets/scss/main.scss:assets/stylesheets/css/main.css
 
 Instructions for Developers
 ---------------------------
+Spin up a local server here:
 
+    $ python -m SimpleHTTPServer
 
 
 

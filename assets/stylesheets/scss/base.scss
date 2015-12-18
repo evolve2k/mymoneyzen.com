@@ -1,0 +1,36 @@
+@font-face{
+  font-family: 'Montserrat-Hairline';
+  src: url("fonts/Montserrat-Hairline");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body{
+  font-size: 16pt;
+  font-family: 'Montserrat-Hairline', sans-serif;
+  font-weight: 100;
+}
+
+section{
+  padding-left: 2rem;
+  padding-right: 3rem;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+iframe{
+  max-width: 100%;
+  height: 12.65rem;   /* .575 */
+  width: 22rem;
+  max-width: 100%;
+}
+
+.video{
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  body{
+    font-size: 20pt;
+  }
+}

@@ -5,143 +5,186 @@
   <meta name="viewport" content="width=device-width" />
 	<title>MyMoneyZen</title>
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/main.css" />
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- live reload script remove from production -->
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script>
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
 	<!-- end script -->
 </head>
 <body>
-		<main>
+	<main>
+		<div id="hero">
 			<header>
-				<span class="header_logo"></span>
-				<nav>
-					<ul>
-						<li>
-							<a href="#contact">About</a>
-						</li>
-						<li>
-							<a href="#contact">Contact</a>
-						</li>
-					</ul>
-				</nav>
+				<section>
+					<nav>
+						<img src="assets/images/logo/MyMoneyZen_Logo1.png" alt="MyMoneyZen logo">
+						<img id="menu-icon" src="assets/vectors/menu-icon.svg" alt="Menu Icon">
+						<ul>
+							<li><a href="#">How it works</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</nav>
+					<hgroup>
+							<h1>budgeting sucks</h1>
+							<h2>We all know we should budget, but tracking every expense is so unrealistic. It’s time for a new approach.</h2>
+							<p><a href="#get-power">v</a></p>
+					</hgroup>
+				</section>
 			</header>
+		</div>
+		<div id="get-power">
+			<section class="container">
+				<h2 class="headline">
+					Get complete power over your everyday money
+				</h2>
+				<div class="video">
+					<iframe  src="https://www.youtube.com/embed/LG0RS66lEpw" frameborder="0" allowfullscreen>
+					</iframe>
+				</div>
+			</section>
+		</div>
 
-			<div id="hero" class="overlay">
-				<section class="container">
-						<h2>A New Approach to Budgeting</h2>
-						<h2>We all know we should budget, but tracking every expense is so unrealistic. It’s time for a new approach</h2>
-						<a class="link-outline call-to-action" href="#contact">Watch video.</a>
-				</section>
-			</div>
+		<div id="highlight" class="overlay">
+			<section>
+				<h4 class="headline">
+					MyMoneyZen is an online course that teaches you how to set up an automatic system to manage your money for you … so you can be good with your money, fast.
+				</h4>
+			</section>
+		</div>
 
-			<div id="coffee">
-
-			</div>
-
+		<section class="container">
+			<h3 class="headline">HOW IT WORKS</h3>
 			<div>
-				<section class="container">
-					<h4>
-						We all know we should budget, but tracking expenses regularly isn’t realistic. Who has the time? It’s time for a new approach.
-					</h4>
-					<h3>A truly realistic budget for expenses</h3>
-					<ul>
-						<li><strong>Goals</strong> Harness the remainder for what’s important to you.</li>
-						<li><strong>Auto implement</strong> Set up bank accounts & auto transfers to automatically implement your budget</li>
-					</ul>
-				</section>
+				<h4>
+					1. Discover
+				</h4>
+				<p>
+					Find out how much your life <strong>really</strong> costs. Discover how much of each pay you need to set aside for bills &amp; other expenses that you experience all throughout the year.
+				</p>
 			</div>
+			<div>
+				<h4>
+					2. Plan
+				</h4>
+				<p>
+					See how much of each pay you've truly got left over, for spending and saving and decide how much you want to put towards each.
+				</p>
+			</div>
+			<div>
+				<h4>
+					3. Automate
+				</h4>
+				<p>
+					Automatically roll out your plan by setting up separate bank accounts and auto transfers, to automatically channel the money to the right place every week.
+				</p>
+			</div>
+		</section>
 
-			<div id="why">
-			</div>
+		<div id="automatic" class="overlay">
+			<h2 class="headline">
+				Set up an automatic system to manage your money for you
+			</h2>
+		</div>
+
+		<section class="container why-features">
+			<h3 class="headline">THERE'S A LOT TO LOVE</h3>
+			<h4>
+				Empowering
+				<!-- &nbsp;<span class='fa fa-battery-full'></span> -->
+			</h4>
+			<p>
+				We teach <em>you</em> how to manage your money, giving you the knowledge &amp; tools you need.
+			</p>
+			<h4>
+				Fast
+				<!-- &nbsp;<span class='fa fa-fighter-jet'></span> -->
+			</h4>
+			<p>
+				After the initial set up time, there’s no regular maintenance required.
+			</p>
+			<h4>
+				Supportive
+				<!-- &nbsp;<span class='fa fa-balance-scale '></span> -->
+			</h4>
+			<p>
+				Money &amp; learning can be uncomfortable. You’re supported to move through it powerfully.
+			</p>
+		</section>
+
+		<div id="coffee" class="overlay">
+			<h2 class="headline">
+				You’ll automatically spend your money in the right place.
+			</h2>
+		</div>
+
+		<section class="container">
+			<h3 class="headline">YOUR NEW REALITY</h3>
+			<h3>
+				Peace of Mind
+				<!-- &nbsp;<span class="fa fa-gift"></span> -->
+			</h3>
+			<p>
+				Bills money is put aside ready to go.
+			</p>
+			<h3>
+				Your Dreams Sooner
+				<!-- &nbsp;<span class="fa fa-suitcase"></span> -->
+			</h3>
+			<p>
+				Savings goals are automatically being achieved.
+			</p>
+
+			<h3>
+				Fun
+				<!-- &nbsp;<span class="fa fa-gamepad"></span> -->
+			</h3>
+			<p>
+				Fully enjoy the spending money which hits your account once a week.
+			</p>
+		</section>
+	</div>
+
+		<div id="automatic" class="overlay">
+			<h2 class="headline">
+				Created by everyday people, for everyday people
+			</h2>
+		</div>
 
 		<div>
-
-			<section class="container why-features">
-				<ol>
-					<li>
-						<i class='fa fa-fighter-jet'></i>
-						<h4>Fast</h4>
-						<p>Tracking expenses is a thing of the past. Once set up, there is little ongoing maintenance.</p>
-					</li>
-					<li>
-						<i class='fa fa-battery-full'></i>
-						<h4>Empowering</h4>
-						<p>We teach YOU how to manage your money, by giving you the knowledge & tools you need.</p>
-					</li>
-					<li>
-						<i class='fa fa-balance-scale '></i>
-						<h4>Supportive</h4>
-						<p>Money & learning something new can be uncomfortable. We support you to move through it powerfully.</p>
-					</li>
-				</ol>
+			<section class="container testimonials">
+				<blockquote>
+					MyMoneyZen has helped us create peace of mind. After the initial set up time we have then been able to get on with our lives and know we are living within our means as well as working towards our goals. What a great philosophy and system it is.
+					<br> — Melissa Willoughby
+				</blockquote>
+				<blockquote>
+					MyMoneyZen was great for getting down to the nitty gritty of what exactly was needed to get on top of my finances. The focus on having everything then automated by setting up scheduled bank transfers felt like magic once it was all setup. Easy and fun, does actually make it easy.
+					<br> — Richard Khoo CPA
+				</blockquote>
 			</section>
 
-				<section class="container">
-					<h2>Your New Reality</h2>
-						<ol>
-							<li>
-								<i class="fa fa-gift"></i>
-								<h3>Peace of Mind</h3>
-								<p>Bills money is put aside ready to go</p>
-							</li>
-							<li>
-								<i class="fa fa-suitcase"></i>
-								<h3>Your Dreams Sooner</h3>
-								<p>Savings goals are automatically being achieved.</p>
-							</li>
-							<li>
-								<i class="fa fa-gamepad"></i>
-								<h3>Fun</h3>
-								<p>Spending money hits your account once a week. See at a glance how much you have to spend & fully enjoy spending.</p>
-							</li>
-						</ol>
-				</section>
-			</div>
+			<section>
+				<h2 class="headline">
+					It’s not what you earn, it’s what you do with it that really counts.
+				</h2>
+			</section>
 
-			<div id="live-the-life" class="overlay">
-				<section class="container overlay">
-					<!-- <h2>
-						Live the life <em>you</em> love.<br>
-						Whatever that is for you.
-					</h2> -->
-				</section>
+			<div id="nature" class="overlay">
+				<a class="link-outline call-to-action center" href="#contact">Get started</a>
 			</div>
-
-			<div>
-				<section class="container testimonials">
-					<h2>Live the life <em>you</em> love</h2>
-					<ul>
-						<li><em>MyMoneyZen has helped us create peace of mind. After the initial set up time we have then been able to get on with our lives and know we are living within our means as well as working towards our goals. What a great philosophy and system it is.</em><br> — Melissa Willoughby</li>
-						<li><em>MyMoneyZen was great for getting down to the nitty gritty of what exactly was needed to get on top of my finances. The focus on having everything then automated by setting up scheduled bank transfers felt like magic once it was all setup. Easy and fun, does actually make it easy.</em><br> - Richard Khoo CPA</li>
-					</ul>
-					<div class="center">
-						<a class="link-outline dark call-to-action center" href="#contact">Get started today.</a>
-					</div>
-				</section>
-			</div>
-			<footer>
-				<section class="container">
-					<p>Our Vision is to give humanity complete clarity and power over their everyday money.</p>
-					<br>
-					<p><em>Still have questions? We'd love to hear from you.</em></p>
-					<ul id="contact">
-						<li>
-							<a href="mailto:hello@mymoneyzen.com.au"><i class="fa fa-envelope"></i>hello@mymoneyzen.com.au</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/mymoneyzen"><i class="fa fa-facebook-official"></i>Facebook</a>
-						</li>
-						<li>
-							<a href="twitter: https://twitter.com/mymoneyzen"><i class="fa fa-twitter"></i>Twitter</a>
-						</li>
-						<li>
-							<a href="https://www.youtube.com/channel/UCR7eVyWKceKgTY3Wbd_UY1g"><i class="fa fa-youtube-play"></i>Youtube</a>
-						</li>
-					</ul>
-				</section>
-			</footer>
-		</main>
-	</body>
+		</div>
+		<footer>
+			<section class="container">
+				<p>
+					Our Vision is to give humanity complete clarity and power over their everyday money.
+				</p>
+			</section>
+		</footer>
+	</main>
+</body>
 </html>
