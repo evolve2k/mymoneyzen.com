@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/main.css" />
-	<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'> -->
+
 	<!-- live reload script remove from production -->
 	<script>
 		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
@@ -21,20 +22,24 @@
 			<header>
 				<section>
 					<nav>
-						<img src="assets/images/logo/MyMoneyZen_Logo1.png" alt="MyMoneyZen logo">
+						<img src="assets/images/logo/MyMoneyZen_Logo2.png" alt="MyMoneyZen logo">
 						<img id="menu-icon" src="assets/vectors/menu-icon.svg" alt="Menu Icon">
 						<ul>
-							<li><a href="#">How it works</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Contact us</a></li>
+							<li><a href="#">How it works</a>&nbsp;</li>
+							<li><a href="#">FAQ</a>&nbsp;</li>
+							<li><a href="#">About</a>&nbsp;</li>
+							<li><a href="#">Contact</a>&nbsp;</li>
 						</ul>
 					</nav>
 					<hgroup>
 							<h1>budgeting sucks</h1>
 							<h2>We all know we should budget, but tracking every expense is so unrealistic. It’s time for a new approach.</h2>
-							<p><a href="#get-power">v</a></p>
 					</hgroup>
+					<p>
+						<a href="#get-power">
+							<img id="continue" src="assets/vectors/continue-icon.svg" alt="continue">
+						</a>
+					</p>
 				</section>
 			</header>
 		</div>
@@ -58,31 +63,35 @@
 			</section>
 		</div>
 
-		<section class="container">
+		<section class="longer">
 			<h3 class="headline">HOW IT WORKS</h3>
-			<div>
-				<h4>
-					1. Discover
-				</h4>
-				<p>
-					Find out how much your life <strong>really</strong> costs. Discover how much of each pay you need to set aside for bills &amp; other expenses that you experience all throughout the year.
-				</p>
-			</div>
-			<div>
-				<h4>
-					2. Plan
-				</h4>
-				<p>
-					See how much of each pay you've truly got left over, for spending and saving and decide how much you want to put towards each.
-				</p>
-			</div>
-			<div>
-				<h4>
-					3. Automate
-				</h4>
-				<p>
-					Automatically roll out your plan by setting up separate bank accounts and auto transfers, to automatically channel the money to the right place every week.
-				</p>
+			<div id="how-it-works" class="three-column">
+				<div>
+
+					<h4>
+						1. DISCOVER &nbsp; <span class="fa fa-search"></span>
+					</h4>
+					<p>
+						Find out how much your life <em>really</em> costs. Discover how much of each pay you need to set aside for bills &amp; other expenses that you experience all throughout the year.
+					</p>
+				</div>
+				<div>
+
+					<h4>
+						2. PLAN &nbsp; <span class="fa fa-pencil-square-o"></span>
+					</h4>
+					<p>
+						See how much of each pay you've truly got left over, for spending and saving and decide how much you want to put towards each.
+					</p>
+				</div>
+				<div>
+					<h4>
+						3. AUTOMATE &nbsp; <span class="fa fa-repeat"></span>
+					</h4>
+					<p>
+						Automatically roll out your plan by setting up separate bank accounts and auto transfers, to automatically channel the money to the right place every week.
+					</p>
+				</div>
 			</div>
 		</section>
 
@@ -94,27 +103,38 @@
 
 		<section class="container why-features">
 			<h3 class="headline">THERE'S A LOT TO LOVE</h3>
-			<h4>
-				Empowering
-				<!-- &nbsp;<span class='fa fa-battery-full'></span> -->
-			</h4>
-			<p>
-				We teach <em>you</em> how to manage your money, giving you the knowledge &amp; tools you need.
-			</p>
-			<h4>
-				Fast
-				<!-- &nbsp;<span class='fa fa-fighter-jet'></span> -->
-			</h4>
-			<p>
-				After the initial set up time, there’s no regular maintenance required.
-			</p>
-			<h4>
-				Supportive
-				<!-- &nbsp;<span class='fa fa-balance-scale '></span> -->
-			</h4>
-			<p>
-				Money &amp; learning can be uncomfortable. You’re supported to move through it powerfully.
-			</p>
+			<div class="three-column">
+				<div>
+					<h4>
+						<span class="fa fa-graduation-cap"></span>&nbsp;
+						Empowering
+						<!-- &nbsp;<span class='fa fa-battery-full'></span> -->
+					</h4>
+					<p>
+						We teach <em>you</em> how to manage your money, giving you the knowledge &amp; tools you need.
+					</p>
+				</div>
+				<div>
+					<h4>
+						<span class="fa fa-angle-double-right"></span>&nbsp;
+						Fast
+						<!-- &nbsp;<span class='fa fa-fighter-jet'></span> -->
+					</h4>
+					<p>
+						After the initial set up time, there’s no regular maintenance required.
+					</p>
+				</div>
+				<div>
+					<h4>
+						<span class="fa fa-users"></span>&nbsp;
+						Supportive
+						<!-- &nbsp;<span class='fa fa-balance-scale '></span> -->
+					</h4>
+					<p>
+						Money &amp; learning can be uncomfortable. You’re supported to move through it powerfully.
+					</p>
+				</div>
+			</div>
 		</section>
 
 		<div id="coffee" class="overlay">
@@ -150,7 +170,7 @@
 		</section>
 	</div>
 
-		<div id="automatic" class="overlay">
+		<div id="everyday-people" class="overlay">
 			<h2 class="headline">
 				Created by everyday people, for everyday people
 			</h2>

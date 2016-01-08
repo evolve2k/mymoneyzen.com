@@ -10,7 +10,7 @@ body {
 
 section {
   padding-left: 2rem;
-  padding-right: 3rem;
+  padding-right: 2rem;
   margin: 0 auto;
   max-width: 40rem; }
 
@@ -19,11 +19,8 @@ iframe {
   height: 12.65rem;
   /* .575 */
   width: 22rem;
-  max-width: 100%; }
+  max-width: 100%;
+  padding-bottom: 2rem; }
 
 .video {
   text-align: center; }
-
-@media screen and (min-width: 800px) {
-  body {
-    font-size: 20pt; } }

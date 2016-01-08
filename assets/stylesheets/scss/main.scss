@@ -1,10 +1,21 @@
 @import "modules/all";
 
+body{
+	background-color: #F2F4F6;
+}
+
+main{
+	max-width: 1300px;
+	margin: 0 auto;
+
+	background-color: white;
+}
+
 #hero {
-	height: 34rem;
+	height: 28rem;
 	padding-top: 2rem;
 
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(11,11,11,.1) 60%), url("../../images/forest-girl.jpg");
+  background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url("../../images/forest-girl.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -14,6 +25,12 @@
 	// background-image: url("../../images/forest-girl.jpg");
 	// background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(99,99,99,.1) 60%);
 }
+
+// #hero nav{
+// 	background-color: gray;
+// 	display: flex;
+// 	justify-content: space-between;
+// }
 
 #hero img{
 	max-width: 40rem;
@@ -26,7 +43,7 @@
 
 #hero h1, #hero h2, #hero h4 {
 	text-align: center;
-	font-weight: 500;
+	font-weight: 600;
 	color: $white;
 }
 
@@ -36,10 +53,31 @@
 	font-size: 16px;
 }
 
+.three-column {
+	display: block;
+	flex-direction: row;
+}
+
+.three-column > div {
+	padding: .5rem;
+}
+
+.three-column span{
+	font-size: 1.5rem;
+	color: lightgray;
+}
+
+.fa{
+	font-size: 10rem;
+}
+
 header nav{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
+	font-size: 14pt;
+
+	// background-color: gray;
 }
 
 header nav > ul{
@@ -77,6 +115,7 @@ header img{
 }
 .headline{
 	text-align: center;
+	font-size: 36px;
 }
 
 .overlay{
@@ -101,14 +140,35 @@ header img{
 }
 
 
-#automatic	{ background-image: url("../../images/girl-writing.jpg") }
-#coffee			{ background-image: url("../../images/coffee.jpg") }
+#automatic	{
+	// background: rgba(100,100,100,.9) url("../../images/girl-writing.jpg")
+	background-image: url("../../images/girl-writing.jpg");
+
+}
+#coffee			{
+	background-image: url("../../images/coffee.jpg");
+
+}
+#everyday-people	{
+	background-image: url("../../images/sisters-profile.jpg");
+	background-position: center top;
+}
 
 #nature{
 	background-image: url("../../images/nature-legs.jpg");
 	align-items: flex-end;
-	background-color: red;
 	padding-bottom: 3rem;
+}
+
+#continue{
+	display: flex;
+	align-self: center;
+
+	height: 1rem;
+}
+
+a, a:visited{
+	color: $primary;
 }
 
 h1 {
@@ -120,6 +180,11 @@ h2 {
 	padding-bottom: 1rem;
 	font-size: 22px;
 	font-weight: lighter;
+}
+
+.headline{
+	// font-size: 28px;
+	font-weight: normal;
 }
 
 h3,h4{
@@ -365,10 +430,51 @@ li > p {
 	@include col-1-1;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 980px) {
+	section{
+		max-width: 45rem;
+	}
+
+	header nav > ul{
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+	}
+	header nav > li{
+		display: flex;
+		text-decoration: none;
+		list-style-type: none;
+		padding: 0 5rem;
+		margin: 0;
+	}
+	header nav a{
+		text-decoration: none;
+	}
+	#menu-icon{
+		display: none;
+	}
 	#hero{
 		height: 38rem;
 	}
+	#hero h1{
+		font-size: 200%;
+	}
+	#hero h2{
+		font-size: 100%;
+	}
+	.three-column{
+		display: flex;
+		// margin-left: -8rem;
+		// width: 53rem;
+	}
+	.longer{max-width: 78rem;}
+	.overlay{
+		height: 40rem;
+	}
+	.headline{
+		// padding-top: 14rem; 
+	}
+
 }
 @media screen and (min-width: 1099px) {
 	.why-features {
