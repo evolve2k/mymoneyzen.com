@@ -56,6 +56,9 @@ main {
   margin: 0 auto;
   background-color: white; }
 
+section {
+  padding-top: 2rem; }
+
 #hero {
   height: 28rem;
   padding-top: 2rem;
@@ -65,6 +68,9 @@ main {
   background-size: cover;
   width: 100%;
   border: 0; }
+
+#hero section {
+  padding-top: 0; }
 
 #hero img {
   max-width: 40rem;
@@ -87,14 +93,27 @@ main {
   flex-direction: row; }
 
 .three-column > div {
-  padding: .5rem; }
+  padding: .5rem;
+  text-align: center; }
 
 .three-column span {
-  font-size: 1.5rem;
-  color: lightgray; }
+  font-size: 1.5rem; }
+
+.three-column h4 {
+  font-weight: bold; }
+
+#love {
+  text-align: center; }
+
+#love span {
+  font-size: 1.5rem; }
+
+#love h4 {
+  font-weight: bold; }
 
 .fa {
-  font-size: 10rem; }
+  font-size: 10rem;
+  color: #0edfa0; }
 
 header nav {
   display: flex;
@@ -106,6 +125,9 @@ header nav > ul {
   display: none;
   /* hide menu items at mobile size and show menu-icon */ }
 
+blockquote {
+  font-style: italic; }
+
 #get-power {
   border: 0;
   border-top: .3rem;
@@ -113,7 +135,7 @@ header nav > ul {
   border-color: #0edfa0; }
 
 header img {
-  height: 2rem; }
+  height: 2.5rem; }
 
 #menu-icon {
   display: flex;
@@ -131,7 +153,13 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; }
+  color: white;
+  border-bottom-color: #0edfa0;
+  border-bottom-width: 0.1rem;
+  border-bottom-style: solid; }
+
+.overlay h2 {
+  padding-top: 8rem; }
 
 #highlight {
   background-color: #0edfa0;
@@ -140,14 +168,17 @@ header img {
   padding-right: 1rem; }
 
 #automatic {
-  background-image: url("../../images/girl-writing.jpg"); }
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url("../../images/girl-writing.jpg");
+  background-size: cover; }
 
 #coffee {
-  background-image: url("../../images/coffee.jpg"); }
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url("../../images/coffee.jpg");
+  background-size: cover; }
 
 #everyday-people {
-  background-image: url("../../images/sisters-profile.jpg");
-  background-position: center top; }
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url("../../images/sisters-profile.jpg");
+  background-position: center top;
+  background-size: cover; }
 
 #nature {
   background-image: url("../../images/nature-legs.jpg");
@@ -183,6 +214,15 @@ li {
 li > p {
   color: black; }
 
+.testimonials {
+  padding-top: 5rem;
+  padding-bottom: 1rem; }
+
+footer {
+  text-align: center;
+  background-color: #231F1C;
+  color: #6f664e; }
+
 @media screen and (max-width: 480px) {
   width: 100%; }
 @media screen and (min-width: 980px) {
@@ -217,13 +257,19 @@ li > p {
     font-size: 100%; }
 
   .three-column {
-    display: flex; }
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem; }
 
   .longer {
     max-width: 78rem; }
 
   .overlay {
-    height: 40rem; } }
+    height: 40rem; }
+
+  .video iframe {
+    height: 25rem;
+    width: 100rem; } }
 @media screen and (min-width: 1099px) {
   .why-features {
     max-width: 1200px; }

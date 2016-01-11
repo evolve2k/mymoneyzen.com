@@ -1,10 +1,7 @@
-thesite ro.com
-===============
+mymoneyzen.com
+==============
 
-This sentence summaries what the website is for.
-
-A second sentence shares interesting/unique/important facts about the project that a new contributor should be aware of.
-Please replace all this text in your new project.
+A new approach to budgeting and managing everyday money.
 
 Installation
 ------------

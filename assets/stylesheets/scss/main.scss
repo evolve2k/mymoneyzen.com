@@ -11,6 +11,10 @@ main{
 	background-color: white;
 }
 
+section{
+	padding-top: 2rem;
+}
+
 #hero {
 	height: 28rem;
 	padding-top: 2rem;
@@ -31,6 +35,10 @@ main{
 // 	display: flex;
 // 	justify-content: space-between;
 // }
+
+#hero section{
+	padding-top: 0;
+}
 
 #hero img{
 	max-width: 40rem;
@@ -60,15 +68,32 @@ main{
 
 .three-column > div {
 	padding: .5rem;
+	text-align: center;
 }
 
 .three-column span{
 	font-size: 1.5rem;
-	color: lightgray;
+}
+
+.three-column h4{
+	font-weight: bold;
+}
+
+#love{
+	text-align: center;
+}
+
+#love span{
+	font-size: 1.5rem;
+}
+
+#love h4{
+	font-weight: bold;
 }
 
 .fa{
 	font-size: 10rem;
+	color: $primary;
 }
 
 header nav{
@@ -77,11 +102,15 @@ header nav{
 	align-items: center;
 	font-size: 14pt;
 
-	// background-color: gray;
+	// background-color: #36272A;
 }
 
 header nav > ul{
 	display: none; /* hide menu items at mobile size and show menu-icon */
+}
+
+blockquote{
+	font-style: italic;
 }
 
 #get-power{
@@ -106,7 +135,7 @@ header nav > ul{
 // }
 //
 header img{
-	height: 2rem;
+	height: 2.5rem;
 }
 
 #menu-icon{
@@ -130,6 +159,13 @@ header img{
 	align-items: center;
 
 	color: white;
+	border-bottom-color: $primary;
+	border-bottom-width: 0.1rem;
+	border-bottom-style: solid;
+}
+
+.overlay h2{
+	padding-top: 8rem;
 }
 
 #highlight  {
@@ -141,17 +177,18 @@ header img{
 
 
 #automatic	{
-	// background: rgba(100,100,100,.9) url("../../images/girl-writing.jpg")
-	background-image: url("../../images/girl-writing.jpg");
+	background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url("../../images/girl-writing.jpg");
+	background-size: cover;
 
 }
 #coffee			{
-	background-image: url("../../images/coffee.jpg");
-
+	background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url("../../images/coffee.jpg");
+	background-size: cover;
 }
 #everyday-people	{
-	background-image: url("../../images/sisters-profile.jpg");
+	background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url("../../images/sisters-profile.jpg");
 	background-position: center top;
+	background-size: cover;
 }
 
 #nature{
@@ -410,9 +447,10 @@ li > p {
 // 	color: $white;
 // }
 //
-// .testimonials{
-// 	padding-bottom: 0rem;
-// }
+.testimonials{
+	padding-top: 5rem;
+	padding-bottom: 1rem;
+}
 //
 // .testimonials {
 // 	border: none;
@@ -425,6 +463,12 @@ li > p {
 // .center {
 // 	text-align: center;
 // }
+
+footer{
+	text-align: center;
+	background-color: #231F1C;
+	color: darken(#CFC9BA,40%);
+}
 
 @media screen and (max-width: 480px) {
 	@include col-1-1;
@@ -464,15 +508,22 @@ li > p {
 	}
 	.three-column{
 		display: flex;
+		justify-content: space-between;
+		padding-bottom: 3rem;
 		// margin-left: -8rem;
 		// width: 53rem;
 	}
 	.longer{max-width: 78rem;}
+
 	.overlay{
 		height: 40rem;
 	}
 	.headline{
-		// padding-top: 14rem; 
+		// padding-top: 14rem;
+	}
+	.video iframe{
+		height: 25rem;
+		width: 100rem;
 	}
 
 }
