@@ -129,43 +129,6 @@ header nav > ul a{
 	color: white;
 }
 
-/* mobile only menu */
-
-header nav{
-	position: fixed;
-	padding-top: 3rem;
-	margin-top: -3rem;
-	height: 120%;
-	width: 100%;
-	background-color: rgba(#0EDFA0, .9);
-	// background-color: rgba(#92e8ce, 0.9);
-	color: white;
-	flex-direction: column;
-	justify-content: flex-start;
-	right: -10000px;
-}
-
-#menu-icon:active{
-	transform: translateX(0);
-
-}
-
-nav ul{
-	padding-top: 1rem;
-	list-style: none;
-}
-
-nav ul a{
-	text-decoration: none;
-	font-size: 2rem;
-	padding-bottom: 10rem;
-	line-height: 150%;
-}
-
-nav ul a:visited{
-	color: white;
-}
-
 footer nav ul{
 	display: flex;
 	flex-direction: row;
@@ -173,6 +136,7 @@ footer nav ul{
 	align-content: center;
 	align-items: center;
 	padding-left: 0;
+	list-style: none;
 }
 
 footer nav ul li{
@@ -186,16 +150,6 @@ footer nav ul a{
 footer .fa{
 	color: darken(#CFC9BA,40%);
 }
-
-img#logo{
-	// display: none;
-}
-img#menu-icon{
-	// display: none;
-}
-
-/* end mobile only menu */
-
 
 // header img{
 // 	background-color: white;
@@ -557,15 +511,66 @@ footer{
 	@include col-1-1;
 }
 
+@media screen and (max-width: 979px) {
+	header nav{
+		position: fixed;
+		padding-top: 3rem;
+		margin-top: -3rem;
+		height: 120%;
+		width: 100%;
+		background-color: rgba(#0EDFA0, .9);
+		// background-color: rgba(#92e8ce, 0.9);
+		color: white;
+		flex-direction: column;
+		justify-content: flex-start;
+		right: -10000px;
+	}
+
+	nav ul{
+		padding-top: 1rem;
+		list-style: none;
+	}
+
+	nav ul a{
+		text-decoration: none;
+		font-size: 2rem;
+		padding-bottom: 10rem;
+		line-height: 150%;
+	}
+
+	nav ul a:visited{
+		color: white;
+	}
+
+
+
+	img#logo{
+		// display: none;
+	}
+	img#menu-icon{
+		// display: none;
+	}
+}
+
 @media screen and (min-width: 980px) {
+	#close-menu{
+		display: none;
+	}
 	section{
 		max-width: 45rem;
+	}
+
+	header{
+		display: flex;
+		align-items: baseline;
+		padding-left: 3rem;
 	}
 
 	header nav > ul{
 		display: flex;
 		justify-content: space-around;
 		list-style: none;
+		margin: 0;
 	}
 	header nav > li{
 		display: flex;
