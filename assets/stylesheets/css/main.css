@@ -67,7 +67,7 @@ section {
 
 #hero {
   height: 28rem;
-  padding-top: 2rem;
+  padding-top: 5rem;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url("../../images/forest-girl.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -121,16 +121,70 @@ section {
   font-size: 10rem;
   color: #0edfa0; }
 
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
 header nav {
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14pt; }
 
-header nav > ul {
-  display: none;
-  /* hide menu items at mobile size and show menu-icon */ }
+header nav > ul a {
+  color: white; }
 
+/* mobile only menu */
+header nav {
+  position: fixed;
+  padding-top: 3rem;
+  margin-top: -3rem;
+  height: 120%;
+  width: 100%;
+  background-color: rgba(14, 223, 160, 0.9);
+  color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  right: -10000px; }
+
+#menu-icon:active {
+  transform: translateX(0); }
+
+nav ul {
+  padding-top: 1rem;
+  list-style: none; }
+
+nav ul a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding-bottom: 10rem;
+  line-height: 150%; }
+
+nav ul a:visited {
+  color: white; }
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 0; }
+
+footer nav ul li {
+  padding: 0 1rem; }
+
+footer nav ul a {
+  font-size: 2rem; }
+
+footer .fa {
+  color: #6f664e; }
+
+/* end mobile only menu */
 blockquote {
   font-style: italic; }
 
@@ -224,6 +278,9 @@ li > p {
   padding-top: 5rem;
   padding-bottom: 1rem; }
 
+.carousel-indicators {
+  top: -2rem; }
+
 footer {
   text-align: center;
   background-color: #231F1C;
@@ -254,6 +311,7 @@ footer {
     display: none; }
 
   #hero {
+    padding-top: 7rem;
     height: 38rem; }
 
   #hero h1 {

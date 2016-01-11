@@ -19,12 +19,13 @@
 </head>
 <body>
 	<main>
-		<div id="hero">
+		<div>
 			<header>
-				<section>
-					<nav class="longer">
-						<img id="logo" src="assets/images/logo/MyMoneyZen_Logo2.png" alt="MyMoneyZen logo">
-						<img id="menu-icon" src="assets/vectors/menu-icon.svg" alt="Menu Icon">
+				<img id="logo" src="assets/images/logo/MyMoneyZen_Logo2.png" alt="MyMoneyZen logo">
+				<div>
+					<img id="menu-icon" class="toggle-menu" src="assets/vectors/menu-icon.svg" alt="Menu Icon">
+					<nav class="slideout-menu">
+						<p class="toggle-menu">Close X</p>
 						<ul>
 							<li><a href="#">How it works</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
 							<li><a href="#">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -32,18 +33,25 @@
 							<li><a href="#">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
 						</ul>
 					</nav>
-					<hgroup>
-							<h1>budgeting sucks</h1>
-							<h2>We all know we should budget, but tracking every expense is so unrealistic. It’s time for a new approach.</h2>
-					</hgroup>
-					<p>
-						<a href="#get-power">
-							<img id="continue" src="assets/vectors/continue-icon.svg" alt="continue">
-						</a>
-					</p>
-				</section>
+				</div>
 			</header>
 		</div>
+
+		<div id="hero">
+			<section>
+				<hgroup>
+						<h1>budgeting sucks</h1>
+						<h2>We all know we should budget, but tracking every expense is so unrealistic. It’s time for a new approach.</h2>
+				</hgroup>
+				<p>
+					<a href="#get-power">
+						<img id="continue" src="assets/vectors/continue-icon.svg" alt="continue">
+					</a>
+				</p>
+			</section>
+		</div>
+
+
 		<div id="get-power">
 			<section class="container">
 				<h2 class="headline">
@@ -273,6 +281,7 @@
 		$(document).ready(function(){
 			$('.carousel').carousel();
 		});
-	</script> -->
+	</script>
+	<script src="assets/javascripts/slide-out-menu.js"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@ section{
 
 #hero {
 	height: 28rem;
-	padding-top: 2rem;
+	padding-top: 5rem;
 
   background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url("../../images/forest-girl.jpg");
 	background-repeat: no-repeat;
@@ -104,17 +104,66 @@ section{
 	color: $primary;
 }
 
+header{
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
 header nav{
+	margin-top: 3rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	font-size: 14pt;
-
-	// background-color: #36272A;
 }
 
 header nav > ul{
-	display: none; /* hide menu items at mobile size and show menu-icon */
+	// display: none; /* hide menu items at mobile size and show menu-icon */
+}
+
+header nav > ul a{
+	// display: none; /* hide menu items at mobile size and show menu-icon */
+	color: white;
+}
+
+/* mobile only menu */
+
+header nav{
+	position: fixed;
+	padding-top: 3rem;
+	margin-top: -3rem;
+	height: 120%;
+	width: 100%;
+	background-color: rgba(#0EDFA0, .9);
+	// background-color: rgba(#92e8ce, 0.9);
+	color: white;
+	flex-direction: column;
+	justify-content: flex-start;
+	right: -10000px;
+}
+
+#menu-icon:active{
+	transform: translateX(0);
+
+}
+
+nav ul{
+	padding-top: 1rem;
+	list-style: none;
+}
+
+nav ul a{
+	text-decoration: none;
+	font-size: 2rem;
+	padding-bottom: 10rem;
+	line-height: 150%;
+}
+
+nav ul a:visited{
+	color: white;
 }
 
 footer nav ul{
@@ -137,6 +186,22 @@ footer nav ul a{
 footer .fa{
 	color: darken(#CFC9BA,40%);
 }
+
+img#logo{
+	// display: none;
+}
+img#menu-icon{
+	// display: none;
+}
+
+/* end mobile only menu */
+
+
+// header img{
+// 	background-color: white;
+// 	width: 100%;
+// }
+
 blockquote{
 	font-style: italic;
 }
@@ -148,20 +213,6 @@ blockquote{
 	border-color: $primary;
 }
 
-// #hero > section > a:visted{
-// 	color: $white;
-// }
-//
-// a, a:visited {
-// 	color: $primary;
-// 	text-decoration: none;
-// }
-//
-// a:hover{
-// 	text-decoration: underline;
-// 	color: $tertiary;
-// }
-//
 header img{
 	height: 2.5rem;
 }
@@ -530,6 +581,7 @@ footer{
 		display: none;
 	}
 	#hero{
+		padding-top: 7rem;
 		height: 38rem;
 	}
 	#hero h1{
