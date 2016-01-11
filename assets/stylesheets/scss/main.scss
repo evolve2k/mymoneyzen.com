@@ -117,6 +117,26 @@ header nav > ul{
 	display: none; /* hide menu items at mobile size and show menu-icon */
 }
 
+footer nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding-left: 0;
+}
+
+footer nav ul li{
+	padding: 0 1rem;
+}
+
+footer nav ul a{
+	font-size: 2rem;
+}
+
+footer .fa{
+	color: darken(#CFC9BA,40%);
+}
 blockquote{
 	font-style: italic;
 }
