@@ -1,5 +1,13 @@
 @import "modules/all";
 
+.item{
+	display: none;
+}
+
+.active{
+	display: inherit;
+}
+
 body{
 	background-color: #F2F4F6;
 }
@@ -463,6 +471,10 @@ li > p {
 // .center {
 // 	text-align: center;
 // }
+
+.carousel-indicators{
+	top: -2rem;
+}
 
 footer{
 	text-align: center;

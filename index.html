@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width" />
 	<title>MyMoneyZen</title>
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/carousel.css" />
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -176,10 +177,54 @@
 
 		<div>
 			<section class="container testimonials">
-				<blockquote>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active mb centered">
+							<h3>Melissa Willoughby</h3>
+							<p>
+								<em>
+									"MyMoneyZen has helped us create peace of mind.<br>
+									After the initial set up time we have then been able to get on with our lives and know we are living within our means as well as working towards our goals. What a great philosophy and system it is."
+								</em>
+							</p>
+
+							<!-- <p><img class="img-circle" src="assets/img/pic-t1.jpg" width="80"></p> -->
+						</div>
+
+						<div class="item mb centered">
+							<h3>Lauren Waller - CoFounder</h3>
+							<p>
+								<em>"When I saw what Kylea was creating I knew I had to get on board."</em>
+							</p>
+
+							<!-- <p><img class="img-circle" src="assets/img/pic-t2.jpg" width="80"></p> -->
+						</div>
+
+						<div class="item mb centered">
+							<h3>Richie Khoo</h3>
+							<p>
+								<em>
+									MyMoneyZen was great for getting down to the nitty gritty of what exactly was needed to get on top of my finances. The focus on having everything then automated by setting up scheduled bank transfers felt like magic once it was all setup. Easy and fun, does actually make it easy.
+								</em>
+							</p>
+
+							<!-- <p><img class="img-circle" src="assets/img/pic-t3.jpg" width="80"></p> -->
+						</div>
+
+					</div>
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+				</div>
+
+				<!-- <blockquote>
 					"MyMoneyZen has helped us create peace of mind.<br> After the initial set up time we have then been able to get on with our lives and know we are living within our means as well as working towards our goals. What a great philosophy and system it is."
 					<br><br> — Melissa Willoughby
-				</blockquote>
+				</blockquote> -->
 				<!-- <blockquote>
 					MyMoneyZen was great for getting down to the nitty gritty of what exactly was needed to get on top of my finances. The focus on having everything then automated by setting up scheduled bank transfers felt like magic once it was all setup. Easy and fun, does actually make it easy.
 					<br> — Richard Khoo CPA
@@ -206,7 +251,7 @@
 			</section>
 		</footer>
 	</main>
-	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>
 	// Use local jQuery if CDN unavailable
 		if (typeof jQuery === 'undefined') {

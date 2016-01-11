@@ -48,6 +48,12 @@
 */
 /* Horizontal side-by-side with elements verticaly and horizontaly centered */
 /* Vertical stacked column with elements verticaly and horizontaly centered */
+.item {
+  display: none; }
+
+.active {
+  display: inherit; }
+
 body {
   background-color: #F2F4F6; }
 
