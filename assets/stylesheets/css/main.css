@@ -83,7 +83,7 @@ section {
   margin: 0 auto; }
 
 #hero hgroup {
-  padding-top: 8rem; }
+  padding-top: 4rem; }
 
 #hero h1, #hero h2, #hero h4 {
   text-align: center;
@@ -99,14 +99,19 @@ section {
   flex-direction: row; }
 
 .three-column > div {
-  padding: .5rem;
+  padding: 1rem;
   text-align: center; }
 
 .three-column span {
-  font-size: 1.5rem; }
+  font-size: 3rem; }
 
 .three-column h4 {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.three-column div p {
+  margin-top: 0; }
 
 #love {
   text-align: center; }
@@ -138,6 +143,9 @@ header nav {
 header nav > ul a {
   color: white; }
 
+footer section {
+  padding: 0; }
+
 footer nav ul {
   display: flex;
   flex-direction: row;
@@ -145,16 +153,25 @@ footer nav ul {
   align-content: center;
   align-items: center;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  margin: 0; }
 
 footer nav ul li {
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  padding-bottom: .5rem; }
 
 footer nav ul a {
+  padding-bottom: 0;
   font-size: 2rem; }
 
 footer .fa {
   color: #6f664e; }
+
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: .5rem;
+  font-size: 12pt; }
 
 blockquote {
   font-style: italic; }
@@ -168,13 +185,20 @@ blockquote {
 header img {
   height: 2.5rem; }
 
+.img-circle {
+  border-radius: 50%; }
+
+.centered {
+  text-align: center; }
+
 #menu-icon {
   display: flex;
   height: 1rem; }
 
 .headline {
   text-align: center;
-  font-size: 36px; }
+  font-size: 1.5rem;
+  padding: inherit 1rem; }
 
 .overlay {
   height: 20rem;
@@ -221,6 +245,14 @@ header img {
   align-self: center;
   height: 1rem; }
 
+#really-counts {
+  padding-top: 0;
+  padding-bottom: 1rem; }
+
+#really-counts h2 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 a, a:visited {
   color: #0edfa0; }
 
@@ -257,6 +289,9 @@ footer {
   background-color: #231F1C;
   color: #6f664e; }
 
+@media screen and (max-width: 369px) {
+  header {
+    padding-left: 1rem; } }
 @media screen and (max-width: 480px) {
   width: 100%; }
 @media screen and (max-width: 979px) {
@@ -319,6 +354,9 @@ footer {
     padding-top: 7rem;
     height: 38rem; }
 
+  #hero hgroup {
+    padding-top: 8rem; }
+
   #hero h1 {
     font-size: 200%; }
 
@@ -336,9 +374,15 @@ footer {
   .overlay {
     height: 40rem; }
 
+  .headline {
+    font-size: 3rem; }
+
   .video iframe {
     height: 25rem;
-    width: 100rem; } }
+    width: 100rem; }
+
+  footer {
+    padding-top: 1rem; } }
 @media screen and (min-width: 1099px) {
   .why-features {
     max-width: 1200px; }
