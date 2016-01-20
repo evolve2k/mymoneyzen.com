@@ -60,7 +60,8 @@ body {
 main {
   max-width: 1300px;
   margin: 0 auto;
-  background-color: white; }
+  background-color: white;
+  box-shadow: 0px 0px 3px 1px #eeeeee; }
 
 section {
   padding-top: 2rem; }
