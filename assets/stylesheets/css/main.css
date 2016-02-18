@@ -419,8 +419,14 @@ footer {
 
   .three-column {
     display: flex;
+    flex-basis: 0;
+    flex: 1;
     justify-content: space-between;
     padding-bottom: 3rem; }
+
+  .three-column > div {
+    width: 12px;
+    flex-grow: 1; }
 
   .longer {
     max-width: 78rem; }

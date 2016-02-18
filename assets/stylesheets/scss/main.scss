@@ -71,7 +71,7 @@ section{
 }
 
 .three-column {
-	display: block;
+	display: block; // default handles mobile
 	flex-direction: row;
 }
 
@@ -712,10 +712,16 @@ footer{
 	}
 	.three-column{
 		display: flex;
+		flex-basis: 0;
+		flex: 1;
 		justify-content: space-between;
 		padding-bottom: 3rem;
 		// margin-left: -8rem;
 		// width: 53rem;
+	}
+	.three-column > div{
+		width: 12px;
+		flex-grow: 1;
 	}
 	.longer{max-width: 78rem;}
 
