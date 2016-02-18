@@ -15,12 +15,16 @@
 
 .call-to-action:visited {
   color: white; }
+  border-style: 3px solid #0EDFA0; }
 
 .call-to-action:hover {
   color: #0EDFA0;
   background-color: white;
   border-color: white;
   text-decoration: none; }
+  background-color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  border-style: 3px solid #0EDFA0; }
 
 .call-to-action > .dark {
   color: black; }
