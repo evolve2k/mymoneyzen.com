@@ -14,14 +14,11 @@
   text-align: center; }
 
 .call-to-action:visited {
-  color: white; }
+  color: white;
   border-style: 3px solid #0EDFA0; }
 
 .call-to-action:hover {
   color: #0EDFA0;
-  background-color: white;
-  border-color: white;
-  text-decoration: none; }
   background-color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   border-style: 3px solid #0EDFA0; }
@@ -88,13 +85,12 @@ section {
   margin: 0 auto; }
 
 #hero hgroup {
-  padding-top: 4rem; }
-  text-align: center; }
+  padding-top: 4rem;
+  text-align: center;
+  color: #F6F3F0; }
 
 #hero h1, #hero h2, #hero h4 {
-  text-align: center;
-  font-weight: 600;
-  color: #f6f3f0; }
+  font-weight: 600; }
 
 #hero h2 {
   font-weight: 100;
@@ -130,7 +126,7 @@ section {
 
 .fa {
   font-size: 10rem;
-  color: #0edfa0; }
+  color: #0EDFA0; }
 
 header {
   padding: 1rem 2rem;
@@ -147,7 +143,7 @@ header nav {
   font-size: 14pt; }
 
 header nav > ul a {
-  color: #0edfa0; }
+  color: white; }
 
 footer section {
   padding: 0; }
@@ -186,7 +182,7 @@ blockquote {
   border: 0;
   border-top: .3rem;
   border-style: solid;
-  border-color: #0edfa0; }
+  border-color: #0EDFA0; }
 
 header img {
   height: 2.5rem; }
@@ -215,7 +211,7 @@ header img {
   justify-content: center;
   align-items: center;
   color: white;
-  border-bottom-color: #0edfa0;
+  border-bottom-color: #0EDFA0;
   border-bottom-width: 0.1rem;
   border-bottom-style: solid; }
 
@@ -223,7 +219,7 @@ header img {
   padding-top: 8rem; }
 
 #highlight {
-  background-color: #0edfa0;
+  background-color: #0EDFA0;
   height: 12rem;
   padding-left: 1rem;
   padding-right: 1rem; }
@@ -260,7 +256,7 @@ header img {
   margin-bottom: 0; }
 
 a, a:visited {
-  color: #0edfa0; }
+  color: #0EDFA0; }
 
 h1 {
   font-size: 28px; }
@@ -311,9 +307,9 @@ li > p {
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: #fff;
-  background: -webkit-linear-gradient(white, #999999);
-  background: -o-linear-gradient(white, #999999);
-  background: linear-gradient(white, #999999); }
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+  background: linear-gradient(#fff, #999); }
 
 .close {
   background: #606061;
@@ -461,3 +457,5 @@ footer {
 @media screen and (min-width: 1400px) {
   #hero {
     height: 44rem; } }
+
+/*# sourceMappingURL=main.css.map */
