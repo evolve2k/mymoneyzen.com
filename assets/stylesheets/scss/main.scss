@@ -45,16 +45,16 @@ section{
 // 	justify-content: space-between;
 // }
 
-#hero section{
+#hero section {
 	padding-top: 0;
 }
 
-#hero img{
+#hero img {
 	max-width: 40rem;
 	margin: 0 auto;
 }
 
-#hero hgroup{
+#hero hgroup {
 	padding-top: 4rem;
 	text-align: center;
 	color: $white;
@@ -64,7 +64,7 @@ section{
 	font-weight: 600;
 }
 
-#hero h2{
+#hero h2 {
 	// font-family: 'Montserrat-Hairline';
 	font-weight: 100;
 	font-size: 16px;
@@ -322,7 +322,7 @@ li > p {
 
 .modalDialog {
 	position: fixed;
-	top: -35px;
+	top: -55px;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -341,15 +341,14 @@ li > p {
 }
 
 .modalDialog > div {
-	width:450px;
+	width:575px;
+	color: black;
+	text-align: left;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-	background: linear-gradient(#fff, #999);
 }
 
 .close {
@@ -375,6 +374,21 @@ li > p {
 	background: #00d9ff;
 }
 
+// mailchimp
+.button {
+	text-decoration: none;
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: #0EDFA0;
+	color: white;
+	background-color: #0EDFA0;
+  padding: 0.4em 0.9em 0.45em;
+}
+
+.button:hover {
+	background-color: white;
+	color: #0EDFA0;
+}
 
 //
 // h3 {
