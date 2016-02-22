@@ -341,6 +341,13 @@ li > p {
   background-color: white;
   color: #0EDFA0; }
 
+input {
+  padding: 0.65em 0.75em;
+  margin-bottom: .5rem;
+  border: solid 2px gba(185, 186, 187, 0.25);
+  border-radius: 0.5em;
+  outline: none; }
+
 .testimonials {
   padding-top: 5rem;
   padding-bottom: 1rem; }
