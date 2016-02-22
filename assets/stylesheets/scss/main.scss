@@ -12,6 +12,10 @@ body{
 	background-color: #F2F4F6;
 }
 
+.slideout-menu a, .slideout-menu a:visited{
+	color: white; // mobile
+}
+
 main{
 	max-width: 1300px;
 	margin: 0 auto;
@@ -22,6 +26,15 @@ main{
 
 section{
 	padding-top: 2rem;
+}
+
+.center{
+	text-align: center;
+}
+
+#infoModal{
+	width: 100%;
+	height: 100%;
 }
 
 #hero {
@@ -631,6 +644,10 @@ footer{
 	color: darken(#CFC9BA,40%);
 }
 
+@media screen and (min-width: 369px) {
+
+}
+
 @media screen and (max-width: 369px) {
 	// small display header fix
 	header{
@@ -744,6 +761,9 @@ footer{
 	.headline{
 		font-size: 3rem;
 	}
+	.slideout-menu a, .slideout-menu a:visited{
+		color: $primary; //not for mobile
+	}
 	.video iframe{
 		height: 25rem;
 		width: 100rem;
@@ -751,7 +771,6 @@ footer{
 	footer {
 		padding-top: 1rem;
 	}
-
 }
 @media screen and (min-width: 1099px) {
 	.why-features {
