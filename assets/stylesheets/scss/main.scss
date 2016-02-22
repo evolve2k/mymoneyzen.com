@@ -27,7 +27,6 @@ section{
 #hero {
 	height: 28rem;
 	padding-top: 5rem;
-
   background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url("../../images/forest-girl.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -132,11 +131,6 @@ header nav{
 
 header nav > ul{
 	// display: none; /* hide menu items at mobile size and show menu-icon */
-}
-
-header nav > ul a{
-	// display: none; /* hide menu items at mobile size and show menu-icon */
-	color: white;
 }
 
 footer section{
@@ -631,7 +625,6 @@ footer{
 		width: 100%;
 		background-color: rgba(#0EDFA0, .9);
 		// background-color: rgba(#92e8ce, 0.9);
-		color: white;
 		flex-direction: column;
 		justify-content: flex-start;
 		right: -10000px;
@@ -648,13 +641,6 @@ footer{
 		padding-bottom: 10rem;
 		line-height: 150%;
 	}
-
-	nav ul a:visited{
-		color: white;
-	}
-
-
-
 	img#logo{
 		// display: none;
 	}
