@@ -1,6 +1,6 @@
 #hero {
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1)), url("../../images/sisters-working.jpg");
-  background-position: top center;
+  background-position: center 0%;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -8,3 +8,7 @@
 
 #hero h1 {
   padding-top: 8rem; }
+
+@media screen and (min-width: 1400px) {
+  #hero {
+    background-position: center 33%; } }
