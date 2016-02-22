@@ -278,6 +278,7 @@ header img{
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
 a, a:visited{
 	color: $primary;
 }
@@ -386,6 +387,14 @@ li > p {
 .button:hover {
 	background-color: white;
 	color: #0EDFA0;
+}
+
+input {
+	padding: 0.65em 0.75em;
+	margin-bottom: .5rem;
+	border: solid 2px gba(185,186,187,0.25);
+	border-radius: 0.5em;
+	outline: none;
 }
 
 //
