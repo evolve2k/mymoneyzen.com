@@ -1,18 +1,18 @@
 #hero{
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1)), url("../../images/sisters-working.jpg");
-  background-position: center 0%;
-  background-size: cover;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1)), url("../../images/sisters-in-formation.jpg");
+  background-position: top right;
+  background-size: 150%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
 
 #hero h1{
-  padding-top: 8rem;
+  padding-top: 14rem;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1099px) {
   #hero{
-    background-position: center 33%;
+    background-position: 70% right;
   }
 }

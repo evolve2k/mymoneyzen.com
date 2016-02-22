@@ -8,3 +8,19 @@
 
 #hero h1 {
   padding-top: 8rem; }
+
+.container {
+  text-align: center; }
+
+label {
+  text-align: left; }
+
+input, textarea {
+  width: 80%; }
+
+textarea {
+  height: 20rem; }
+
+@media screen and (min-width: 1400px) {
+  #hero h1 {
+    padding-top: 18rem; } }
