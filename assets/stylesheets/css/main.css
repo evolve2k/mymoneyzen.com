@@ -142,6 +142,9 @@ header nav {
   align-items: center;
   font-size: 14pt; }
 
+.email input {
+  width: 20rem; }
+
 footer section {
   padding: 0; }
 
