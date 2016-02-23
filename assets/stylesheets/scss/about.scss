@@ -1,18 +1,42 @@
 #hero{
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1)), url("../../images/sisters-in-formation.jpg");
   background-position: top right;
-  background-size: 150%;
+  background-size: 160%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+  height: 24rem;
 }
 
 #hero h1{
-  padding-top: 14rem;
+  padding-top: 11rem;
+}
+
+@media screen and (min-width: 480px) {
+  #hero{
+    height: 28rem;
+    background-size: 150%;
+  }
+  #hero h1{
+    padding-top: 14rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #hero{
+    height: 38rem;
+    background-position: 70% right;
+  }
 }
 
 @media screen and (min-width: 1099px) {
   #hero{
     background-position: 70% right;
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  #hero h1{
+    padding-top: 16rem;
   }
 }

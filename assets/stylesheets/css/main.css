@@ -58,6 +58,9 @@
 body {
   background-color: #F2F4F6; }
 
+.slideout-menu a, .slideout-menu a:visited {
+  color: white; }
+
 main {
   max-width: 1300px;
   margin: 0 auto;
@@ -66,6 +69,13 @@ main {
 
 section {
   padding-top: 2rem; }
+
+.center {
+  text-align: center; }
+
+#infoModal {
+  width: 100%;
+  height: 100%; }
 
 #hero {
   height: 28rem;
@@ -141,6 +151,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
   font-size: 14pt; }
+
+.email input {
+  width: 20rem; }
 
 footer section {
   padding: 0; }
@@ -449,6 +462,9 @@ footer {
 
   .headline {
     font-size: 3rem; }
+
+  .slideout-menu a, .slideout-menu a:visited {
+    color: #0edfa0; }
 
   .video iframe {
     height: 25rem;
